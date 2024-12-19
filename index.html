@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+    <div class="container text-center">
+        <h1 class="text-primary">Bienvenido</h1>
+        <button id="iniciar" class="btn btn-primary mt-3">Iniciar</button>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById("iniciar").addEventListener("click", function() {
+            window.location.href = "menu.html";
+        });
+    </script>
+</body>
+</html>
+
+

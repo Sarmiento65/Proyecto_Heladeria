@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combo de Helado 3</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="menu-estilos.css">
+    <style>
+        body {
+            background-color: #c80d0d;
+            color: #2200ff;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <h1 class="text-primary text-center mb-4">Combo de Helado 3</h1>
+        <p><strong>Tiempo de preparación:</strong> 20 minutos</p>
+        <p><strong>Ingredientes:</strong></p>
+
+        <h5 class="text-secondary">Duraznos Mix o Frutillas Mix:</h5>
+        <p><strong>Para Duraznos Mix:</strong></p>
+        <ul class="list-group mb-3">
+            <li class="list-group-item">Helado de vainilla o crema</li>
+            <li class="list-group-item">Duraznos frescos o en almíbar (cortados en trozos)</li>
+            <li class="list-group-item">Sirope de durazno o caramelo</li>
+            <li class="list-group-item">Crema batida (opcional)</li>
+            <li class="list-group-item">Almendras laminadas o nueces trituradas (para decorar)</li>
+        </ul>
+        <p><strong>Para Frutillas Mix:</strong></p>
+        <ul class="list-group mb-3">
+            <li class="list-group-item">Helado de fresa o vainilla</li>
+            <li class="list-group-item">Frutillas frescas (cortadas en trozos)</li>
+            <li class="list-group-item">Sirope de fresa o chocolate blanco</li>
+            <li class="list-group-item">Crema batida (opcional)</li>
+            <li class="list-group-item">Chispas de chocolate o galletas trituradas (como topping)</li>
+        </ul>
+
+        <h5 class="text-secondary">Ensalada Mix:</h5>
+        <ul class="list-group mb-3">
+            <li class="list-group-item">Frutas variadas picadas (pueden incluir plátano, manzana, kiwi, uvas, mango, y melón)</li>
+            <li class="list-group-item">Helado de vainilla, yogur helado o sorbete</li>
+            <li class="list-group-item">Crema batida (opcional)</li>
+            <li class="list-group-item">Sirope de chocolate, caramelo o miel (al gusto)</li>
+            <li class="list-group-item">Granola o frutos secos triturados (opcional, para darle un toque crujiente)</li>
+        </ul>
+
+        <h5 class="text-secondary">Copa Mix:</h5>
+        <ul class="list-group mb-3">
+            <li class="list-group-item">Helado en varios sabores (chocolate, vainilla, fresa, etc.)</li>
+            <li class="list-group-item">Frutas frescas o en almíbar (fresas, duraznos, plátano)</li>
+            <li class="list-group-item">Sirope de chocolate, fresa o caramelo</li>
+            <li class="list-group-item">Crema batida</li>
+            <li class="list-group-item">Toppings como chispas de chocolate, nueces, galletas o cereza para decorar</li>
+        </ul>
+
+        <div class="d-flex justify-content-between mt-4">
+            <button id="comprar" class="btn btn-success">Comprar</button>
+            <button id="regresar" class="btn btn-secondary">Regresar al menú</button>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        const comprarButton = document.getElementById('comprar');
+        const regresarButton = document.getElementById('regresar');
+        regresarButton.addEventListener('click', () => {
+            window.location.href = 'menu.html';
+        });
+        comprarButton.addEventListener('click', () => {
+            const telefono = prompt('Ingrese su número de teléfono:');
+            if (telefono) {
+                const precio = 9.99;
+                alert(`El precio del combo3 es $${precio}. ¿Desea continuar con la compra?`);
+                if (confirm('¿Desea continuar con la compra?')) {
+                    alert('Gracias, pronto nos pondremos en contacto con ud.');
+                }
+            }
+        });
+    </script>
+</body>
+</html>

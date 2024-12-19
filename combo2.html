@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combo de Helado 2</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="menu-estilos.css">
+    <style>
+        body {
+            background-color: #c80d0d;
+            color: #2200ff;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <h1 class="text-primary text-center mb-4">Combo de Helado 2</h1>
+        <p><strong>Tiempo de preparación:</strong> 20 minutos</p>
+        <p><strong>Ingredientes:</strong></p>
+
+        <h5 class="text-secondary">Banana Mix:</h5>
+        <ul class="list-group mb-3">
+            <li class="list-group-item">Plátanos maduros (base principal)</li>
+            <li class="list-group-item">Helado de vainilla o yogur helado</li>
+            <li class="list-group-item">Leche o leche condensada (opcional, para mayor cremosidad)</li>
+            <li class="list-group-item">Sirope de chocolate o caramelo (para decorar)</li>
+            <li class="list-group-item">Granola, chispas de chocolate o nueces (opcional, como topping)</li>
+        </ul>
+
+        <h5 class="text-secondary">Copa Frisky:</h5>
+        <ul class="list-group mb-3">
+            <li class="list-group-item">Helado de fresa o sabores frutales (puede incluir mango, limón, o frambuesa).</li>
+            <li class="list-group-item">Frutas frescas en cubos (como fresa, kiwi, o arándanos)</li>
+            <li class="list-group-item">Sirope de frutas (fresa, frambuesa o maracuyá)</li>
+            <li class="list-group-item">Crema batida</li>
+            <li class="list-group-item">Chispas de colores o galletas trituradas (para darle un toque decorativo)</li>
+        </ul>
+
+        <h5 class="text-secondary">Tulipán Mix:</h5>
+        <ul class="list-group mb-3">
+            <li class="list-group-item">Helado de chocolate y vainilla (como base principal)</li>
+            <li class="list-group-item">Galletas tipo barquillo o wafers (para la decoración)</li>
+            <li class="list-group-item">Sirope de chocolate o caramelo</li>
+            <li class="list-group-item">Frutas como fresa o cereza para topping</li>
+            <li class="list-group-item">Crema batida (opcional, para resaltar)</li>
+            <li class="list-group-item">Nueces o almendras laminadas (para un toque crocante)</li>
+        </ul>
+
+        <div class="d-flex justify-content-between mt-4">
+            <button id="comprar" class="btn btn-success">Comprar</button>
+            <button id="regresar" class="btn btn-secondary">Regresar al menú</button>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        const comprarButton = document.getElementById('comprar');
+        const regresarButton = document.getElementById('regresar');
+        regresarButton.addEventListener('click', () => {
+            window.location.href = 'menu.html';
+        });
+        comprarButton.addEventListener('click', () => {
+            const telefono = prompt('Ingrese su número de teléfono:');
+            if (telefono) {
+                const precio = 9.99;
+                alert(`El precio del combo2 es $${precio}. ¿Desea continuar con la compra?`);
+                if (confirm('¿Desea continuar con la compra?')) {
+                    alert('Gracias, pronto nos pondremos en contacto con ud.');
+                }
+            }
+        });
+    </script>
+</body>
+</html>

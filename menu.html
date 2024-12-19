@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="menu-estilos.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .combo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .precio {
+            font-weight: bold;
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="text-center text-primary mb-4">Menú</h1>
+
+        <ul class="list-group mb-5">
+            <li class="list-group-item"><a href="combo1.html" class="text-decoration-none text-dark">Combo 1: Combo de Helado 1</a></li>
+            <li class="list-group-item"><a href="combo2.html" class="text-decoration-none text-dark">Combo 2: Combo de Helado 2</a></li>
+            <li class="list-group-item"><a href="combo3.html" class="text-decoration-none text-dark">Combo 3: Combo de Helado 3</a></li>
+        </ul>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagenes/combo1.png" class="card-img-top" alt="Combo de Helado 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo de Helado 1</h5>
+                        <p class="card-text">Combo de Helado 1 con Gran Gelato + Ensalada Mix + Copa Mix</p>
+                        <p class="precio">$9.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagenes/combo2.png" class="card-img-top" alt="Combo de Helado 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo de Helado 2</h5>
+                        <p class="card-text">Combo de Helado 2 con Banana Mix + Copa Frisky + Tulipán Mix</p>
+                        <p class="precio">$9.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagenes/combo3.png" class="card-img-top" alt="Combo de Helado 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo de Helado 3</h5>
+                        <p class="card-text">Combo de Helado 3 de Duraznos Mix o Frutillas Mix + Ensalada Mix + Copa Mix</p>
+                        <p class="precio">$9.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <button id="regresar" class="btn btn-secondary" onclick="window.location.href='index.html'">Regresar a la página principal</button>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
